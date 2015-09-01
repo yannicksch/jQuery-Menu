@@ -103,7 +103,7 @@ function Menu(caller, options){
 			.addClass('fg-menu-open')
 			.addClass(options.callerOnState);
 		container.parent().show().click(function(){ menu.kill(); return false; });
-		container.hide().slideDown(options.showSpeed).find('.fg-menu:eq(0)');
+		container.hide().slideDown(options.showSpeed).find('.fg-menu:eq(0)').show();
 		menu.menuOpen = true;
 		caller.removeClass(options.loadingState);
 		$(document).click(killAllMenus);
